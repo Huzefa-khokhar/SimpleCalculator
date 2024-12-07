@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calc">
+        <div id="contect">
+           <h1 style="color: white;background-color: black;border: 4px solid blueviolet;"> Calculator </h1>
+            <form>
+                <div id="output">
+                    <input type="text" id="res">
+                </div>
+                <div class="btn">
+                    <input type="button" value="C" onclick="Clear()" id="clear">
+                    <input type="button" value="<-" onclick="Back()" id="backspace">
+                    <input type="button" value="%" onclick="Slove('%')">
+                    <input type="button" value="/" onclick="Slove('/')">
+                    <br>
+                    <input type="button" name="" value="7" onclick="Slove('7')">
+                    <input type="button" name="" value="8" onclick="Slove('8')">
+                    <input type="button" name="" value="9" onclick="Slove('9')">
+                    <input type="button" name="" value="x" onclick="Slove('x')">
+                    <br>
+                    <input type="button" name="" value="4" onclick="Slove('4')">
+                    <input type="button" name="" value="5" onclick="Slove('5')">
+                    <input type="button" name="" value="6" onclick="Slove('6')">
+                    <input type="button" name="" value="-" onclick="Slove('-')">
+                    <br>
+                    <input type="button" name="" value="1" onclick="Slove('1')">
+                    <input type="button" name="" value="2" onclick="Slove('2')">
+                    <input type="button" name="" value="3" onclick="Slove('3')">
+                    <input type="button" name="" value="+" onclick="Slove('+')">
+                    <br>
+                    <input type="button" name="" value="00" onclick="Slove('00')">
+                    <input type="button" name="" value="0" onclick="Slove('0')">
+                    <input type="button" name="" value="." onclick="Slove('.')">
+                    <input type="button" name="" value="=" onclick="Result()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
